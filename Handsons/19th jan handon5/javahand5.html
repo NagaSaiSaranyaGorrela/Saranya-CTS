@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>handson5</title>
+    <script>
+        function vol_of_sphere() {
+            var r = parseInt(document.getElementById("t1").value);
+            var p = "3.14";
+            var vol = (4 / 3) * p * r * r * r;
+            document.write(vol);
+        }
+    </script>
+</head>
+<body>
+<p>Input radius value and get the volume of a sphere.</p><br />
+        <form>
+           radius<br />
+           <input type="number" id="t1" /><br />
+            volume<br />
+         </form>
+    <button onclick="vol_of_sphere();"> calculate</button>
+
+</body>
+</html>

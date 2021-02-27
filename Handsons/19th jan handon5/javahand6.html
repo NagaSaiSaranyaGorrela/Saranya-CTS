@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>simple interest</title>
+    <script>
+        function simple_int() {
+            var p = parseInt(document.getElementById("t1").value);
+            var n = parseInt(document.getElementById("t2").value);
+            var r = parseInt(document.getElementById("t3").value);
+            var SI = (p * n * r) / 100;
+            document.write(SI);
+        }
+    </script>
+</head>
+<body>
+<form>
+    p value<input type="number" id="t1" /><br />
+    n value<input type="number" id="t2" /><br />
+    r value<input type="number" id="t3" /><br />
+    <button onclick="simple_int();">submit</button>
+</form>
+</body>
+</html>
